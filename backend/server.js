@@ -7,11 +7,10 @@ import messageRoutes from "./routes/message.routes.js";
 import cookieParser from "cookie-parser";
 import userRoutes from "./routes/user.routes.js";
 import { app, server } from "./socket/socket.js";
+dotenv.config();
 
 
 const PORT = process.env.PORT||5000;
-
-dotenv.config();
 const __dirname = path.resolve();
 
 
